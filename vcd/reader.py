@@ -411,6 +411,7 @@ class _TokenizerState:
             or c == 95  # '_'
             or c == 36  # '$'
             or c == 46  # '.' not in spec, but seen in the wild
+            or c == 124  # '|' not in spec, but seen in the wild
             or c == 40  # '(' - produced by cva6 core
             or c == 41  # ')' - produced by cva6 core
         ):
